@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">QuestAdvanceLayout_045</string>
+    <string name="nama">Wildan Zauhair Pratama</string>
+    <string name="alamat">Pandak</string>
+    <string name="prodi">TI</string>
+    <string name="univ">UMY</string>
+    <string name="copy">Copyright,2025</string>
 </resources>
