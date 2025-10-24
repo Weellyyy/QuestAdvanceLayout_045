@@ -34,7 +34,7 @@ fun UIKetiga(modifier: Modifier) {
         modifier = modifier
             .fillMaxSize()
             .background(colorResource(R.color.black))
-            .padding(horizontal = 24.dp, vertical = 40.dp),
+            .padding(all = 16.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ){
         val gambar = painterResource(R.drawable.emyukk)
