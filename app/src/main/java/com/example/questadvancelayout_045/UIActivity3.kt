@@ -59,6 +59,15 @@ fun UIKetiga(modifier: Modifier) {
                     .size(30.dp)
                     .clip(CircleShape)
             )
+            Spacer(modifier = Modifier.width(iconspacing))
+            Image(
+                painter = painterResource(R.drawable.ig),
+                contentDescription = null,
+                modifier = Modifier
+                    .size(30.dp)
+                    .clip(CircleShape)
+            )
+            Spacer(modifier = Modifier.width(iconspacing))
 
         }
         Text(
