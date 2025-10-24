@@ -60,7 +60,7 @@ fun ActivtasPertama(modifier: Modifier){
                     painter = gambar,
                     contentDescription = null,
                     modifier = Modifier
-                        .size(100.dp)
+                        .size(120.dp)
                         .padding(all = 5.dp)
                 )
 
