@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -35,7 +36,7 @@ fun UIKetiga(modifier: Modifier) {
             .padding(horizontal = 24.dp, vertical = 40.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ){
-        val gambar = painterResource(R.drawable.emyuk)
+        val gambar = painterResource(R.drawable.emyukk)
         Image(
             painter = gambar,
             contentDescription = "EMYUUU",
@@ -44,7 +45,22 @@ fun UIKetiga(modifier: Modifier) {
                 .clip(CircleShape),
             contentScale = ContentScale.Crop
         )
-        Spacer(modifier = modifier.height(16.dp))
+        Row (
+            modifier= Modifier
+                .fillMaxWidth(),
+            horizontalArrangement = Arrangement.Center,
+            verticalAlignment = Alignment.CenterVertically
+        ){
+            val iconspacing = 16.dp
+            Image(
+                painter = painterResource(R.drawable.fb),
+                contentDescription = null,
+                modifier= Modifier
+                    .size(30.dp)
+                    .clip(CircleShape)
+            )
+
+        }
         Text(
             text = stringResource(R.string.tim),
             color = colorResource(R.color.white),
@@ -59,22 +75,10 @@ fun UIKetiga(modifier: Modifier) {
         Text(
             text = stringResource(R.string.kocak),
             color = colorResource(R.color.white),
-            fontSize = 16.sp,
+            fontSize = 20.sp,
             textAlign = TextAlign.Center
         )
-        Spacer(modifier = Modifier.height(24.dp))
-        Row (
-            modifier= Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.Center,
-            verticalAlignment = Alignment.CenterVertically
-        ){
-            val iconspacing = 16.dp
-            Image(
-                painter = painterResource(R.drawable.fb),
-                contentDescription = null,
-                modifier= Modifier.size(30.dp)
-            )
-        }
+
     }
 
 }
