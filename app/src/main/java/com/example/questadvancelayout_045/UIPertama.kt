@@ -55,7 +55,7 @@ fun ActivtasPertama(modifier: Modifier){
                 verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier.padding(10.dp)
             ){
-                val gambar = painterResource(R.drawable.logo_umy)
+                val gambar = painterResource(R.drawable.logo_umy1)
                 Image(
                     painter = gambar,
                     contentDescription = null,
