@@ -3,6 +3,7 @@ package com.example.questadvancelayout_045
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -13,11 +14,16 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ArrowForward
+import androidx.compose.material.icons.filled.Lock
+import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
@@ -104,6 +110,56 @@ fun UIKetiga(modifier: Modifier) {
             fontFamily = FontFamily.Cursive,
             textAlign = TextAlign.Center
         )
+        Spacer(modifier = Modifier.height(32.dp))
+
+        Column (
+            verticalArrangement = Arrangement.spacedBy(16.dp)
+        ){
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(60.dp)
+                    .background(colorResource(R.color.teal_200))
+                    .padding(horizontal = 16.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ){
+                Box(
+                    modifier = Modifier
+                        .size(40.dp)
+                        .background(colorResource(R.color.purple_500), shape = CircleShape),
+                    contentAlignment = Alignment.Center
+                ){
+                    Icon(
+                        imageVector = Icons.Default.Lock,
+                        contentDescription = null,
+                        tint = Color.DarkGray,
+                        modifier = Modifier.size(20.dp)
+                    )
+                }
+                Spacer(modifier = Modifier.width(16.dp))
+                Text(
+                    text = "Sejarah",
+                    color = Color.DarkGray,
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.Medium
+                )
+                Spacer(modifier= Modifier.weight(1f))
+                Box(
+                    modifier = Modifier
+                        .size(24.dp)
+                        .background(Color.White, shape = CircleShape),
+                    contentAlignment = Alignment.Center
+                ){
+                    Icon(
+                        imageVector = Icons.AutoMirrored.Filled.ArrowForward,
+                        contentDescription = null,
+                        tint = Color.Gray,
+                        modifier = Modifier.size(16.dp)
+                    )
+                }
+            }
+
+        }
     }
 
 }
