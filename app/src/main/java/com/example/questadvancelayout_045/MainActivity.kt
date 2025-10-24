@@ -20,7 +20,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             QuestAdvanceLayout_045Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    ActivtasPertama(
+                    UIKetiga(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
