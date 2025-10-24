@@ -100,11 +100,10 @@ fun UIKetiga(modifier: Modifier) {
         Text(
             text = stringResource(R.string.kocak),
             color = colorResource(R.color.white),
-            fontSize = 40.sp,
+            fontSize = 35.sp,
             fontFamily = FontFamily.Cursive,
             textAlign = TextAlign.Center
         )
-
     }
 
 }
