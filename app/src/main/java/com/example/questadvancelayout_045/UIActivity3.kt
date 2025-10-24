@@ -89,6 +89,7 @@ fun UIKetiga(modifier: Modifier) {
             text = stringResource(R.string.tim),
             color = colorResource(R.color.white),
             fontSize = 25.sp,
+            fontFamily = FontFamily.Serif,
             fontWeight = FontWeight.Bold
         )
         Text(
