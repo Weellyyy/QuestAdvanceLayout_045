@@ -62,7 +62,19 @@ fun UIKetiga(modifier: Modifier) {
             fontSize = 16.sp,
             textAlign = TextAlign.Center
         )
-
+        Spacer(modifier = Modifier.height(24.dp))
+        Row (
+            modifier= Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.Center,
+            verticalAlignment = Alignment.CenterVertically
+        ){
+            val iconspacing = 16.dp
+            Image(
+                painter = painterResource(R.drawable.fb),
+                contentDescription = null,
+                modifier= Modifier.size(30.dp)
+            )
+        }
     }
 
 }
