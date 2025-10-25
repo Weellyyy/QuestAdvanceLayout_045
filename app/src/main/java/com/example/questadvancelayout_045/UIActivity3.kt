@@ -115,6 +115,7 @@ fun UIKetiga(modifier: Modifier) {
         Column (
             verticalArrangement = Arrangement.spacedBy(16.dp)
         ){
+            // 1. sejarah
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -159,6 +160,7 @@ fun UIKetiga(modifier: Modifier) {
                     )
                 }
             }
+            // 2. rival
             Row (
                 modifier = Modifier
                     .fillMaxWidth()
@@ -184,6 +186,51 @@ fun UIKetiga(modifier: Modifier) {
                 Spacer(modifier = Modifier.width(16.dp))
                 Text(
                     text = "Rival",
+                    color = Color.Black,
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.Medium
+                )
+                Spacer(modifier= Modifier.weight(1f))
+                Box(
+                    modifier = Modifier
+                        .size(24.dp)
+                        .background(Color.White, shape = CircleShape),
+                    contentAlignment = Alignment.Center
+                ){
+                    Icon(
+                        imageVector = Icons.AutoMirrored.Filled.ArrowForward,
+                        contentDescription = null,
+                        tint = Color.Black,
+                        modifier = Modifier.size(16.dp)
+                    )
+                }
+            }
+            //3.
+            Row (
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .clip(CircleShape)
+                    .height(60.dp)
+                    .background(colorResource(R.color.maroon))
+                    .padding(horizontal = 16.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ){
+                Box(
+                    modifier = Modifier
+                        .size(40.dp)
+                        .background(colorResource(R.color.white), shape = CircleShape),
+                    contentAlignment = Alignment.Center
+                ){
+                    Icon(
+                        imageVector = Icons.Default.Lock,
+                        contentDescription = null,
+                        tint = Color.Black,
+                        modifier = Modifier.size(20.dp)
+                    )
+                }
+                Spacer(modifier = Modifier.width(16.dp))
+                Text(
+                    text = "Prestasi",
                     color = Color.Black,
                     fontSize = 16.sp,
                     fontWeight = FontWeight.Medium
