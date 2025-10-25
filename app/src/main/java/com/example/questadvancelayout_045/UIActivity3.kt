@@ -142,7 +142,8 @@ fun UIKetiga(modifier: Modifier) {
                 Spacer(modifier = Modifier.width(16.dp))
                 Text(
                     text = "Sejarah",
-                    color = Color.Black,
+                    color = colorResource(R.color.white),
+                    fontFamily = FontFamily.SansSerif,
                     fontSize = 16.sp,
                     fontWeight = FontWeight.Medium
                 )
@@ -161,7 +162,7 @@ fun UIKetiga(modifier: Modifier) {
                     )
                 }
             }
-            // 2. rival
+            // 2. Daftar Pemain
             Row (
                 modifier = Modifier
                     .fillMaxWidth()
@@ -186,8 +187,9 @@ fun UIKetiga(modifier: Modifier) {
                 }
                 Spacer(modifier = Modifier.width(16.dp))
                 Text(
-                    text = "Rival",
-                    color = Color.Black,
+                    text = "Daftar Pemain",
+                    color = colorResource(R.color.white),
+                    fontFamily = FontFamily.SansSerif,
                     fontSize = 16.sp,
                     fontWeight = FontWeight.Medium
                 )
@@ -206,7 +208,7 @@ fun UIKetiga(modifier: Modifier) {
                     )
                 }
             }
-            //3.
+            //3. prestasi
             Row (
                 modifier = Modifier
                     .fillMaxWidth()
@@ -232,7 +234,8 @@ fun UIKetiga(modifier: Modifier) {
                 Spacer(modifier = Modifier.width(16.dp))
                 Text(
                     text = "Prestasi",
-                    color = Color.Black,
+                    color = colorResource(R.color.white),
+                    fontFamily = FontFamily.SansSerif,
                     fontSize = 16.sp,
                     fontWeight = FontWeight.Medium
                 )
@@ -253,13 +256,13 @@ fun UIKetiga(modifier: Modifier) {
             }
         }
         Spacer(modifier = Modifier.weight(1f))
-        //4. daftar
+        //4.
         Row(
             modifier = Modifier
                 .fillMaxWidth()
                 .height(55.dp)
                 .background(
-                    Color.Red,
+                    colorResource(R.color.maroon),
                     shape = RoundedCornerShape(50)
                 )
                 .padding(horizontal = 40.dp),
@@ -282,6 +285,7 @@ fun UIKetiga(modifier: Modifier) {
             Spacer(modifier = Modifier.width(12.dp))
             Text(
                 text = "Daftar jadi fans EMYU",
+                fontFamily = FontFamily.SansSerif,
                 fontSize = 16.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.White
