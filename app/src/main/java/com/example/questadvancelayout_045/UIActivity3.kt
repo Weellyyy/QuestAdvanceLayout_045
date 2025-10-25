@@ -262,7 +262,7 @@ fun UIKetiga(modifier: Modifier) {
                 .fillMaxWidth()
                 .height(55.dp)
                 .background(
-                    colorResource(R.color.maroon),
+                    colorResource(R.color.khaki),
                     shape = RoundedCornerShape(50)
                 )
                 .padding(horizontal = 40.dp),
@@ -296,7 +296,8 @@ fun UIKetiga(modifier: Modifier) {
         Text(
             text = stringResource(R.string.ident),
             color = colorResource(R.color.white),
-            fontSize = 14.sp,
+            fontFamily = FontFamily.Serif,
+            fontSize = 14.sp
         )
     }
 }
