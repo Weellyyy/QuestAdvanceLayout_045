@@ -291,5 +291,12 @@ fun UIKetiga(modifier: Modifier) {
                 color = Color.White
             )
         }
+        Spacer(modifier = Modifier.height(16.dp))
+        //7. copyright
+        Text(
+            text = stringResource(R.string.ident),
+            color = colorResource(R.color.white),
+            fontSize = 14.sp,
+        )
     }
 }
