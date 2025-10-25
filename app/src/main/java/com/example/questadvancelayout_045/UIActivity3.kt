@@ -121,7 +121,7 @@ fun UIKetiga(modifier: Modifier) {
                 modifier = Modifier
                     .fillMaxWidth()
                     .clip(CircleShape)
-                    .height(60.dp)
+                    .height(80.dp)
                     .background(colorResource(R.color.maroon))
                     .padding(horizontal = 16.dp),
                 verticalAlignment = Alignment.CenterVertically
@@ -167,7 +167,7 @@ fun UIKetiga(modifier: Modifier) {
                 modifier = Modifier
                     .fillMaxWidth()
                     .clip(CircleShape)
-                    .height(60.dp)
+                    .height(80.dp)
                     .background(colorResource(R.color.maroon))
                     .padding(horizontal = 16.dp),
                 verticalAlignment = Alignment.CenterVertically
@@ -213,7 +213,7 @@ fun UIKetiga(modifier: Modifier) {
                 modifier = Modifier
                     .fillMaxWidth()
                     .clip(CircleShape)
-                    .height(60.dp)
+                    .height(80.dp)
                     .background(colorResource(R.color.maroon))
                     .padding(horizontal = 16.dp),
                 verticalAlignment = Alignment.CenterVertically
