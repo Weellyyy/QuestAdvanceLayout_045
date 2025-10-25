@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowForward
 import androidx.compose.material.icons.filled.Lock
@@ -39,7 +40,7 @@ fun UIKetiga(modifier: Modifier) {
     Column (
         modifier = modifier
             .fillMaxSize()
-            .background(colorResource(R.color.black))
+            .background(colorResource(R.color.navy))
             .padding(all = 16.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ){
@@ -60,7 +61,7 @@ fun UIKetiga(modifier: Modifier) {
         ){
             val iconspacing = 16.dp
             Image(
-                painter = painterResource(R.drawable.fb),
+                painter = painterResource(R.drawable.pesbuk),
                 contentDescription = null,
                 modifier= Modifier
                     .size(30.dp)
@@ -68,7 +69,7 @@ fun UIKetiga(modifier: Modifier) {
             )
             Spacer(modifier = Modifier.width(iconspacing))
             Image(
-                painter = painterResource(R.drawable.ig),
+                painter = painterResource(R.drawable.instagrams),
                 contentDescription = null,
                 modifier = Modifier
                     .size(30.dp)
@@ -76,7 +77,7 @@ fun UIKetiga(modifier: Modifier) {
             )
             Spacer(modifier = Modifier.width(iconspacing))
             Image(
-                painter = painterResource(R.drawable.x),
+                painter = painterResource(R.drawable.twiterx),
                 contentDescription = null,
                 modifier = Modifier
                     .size(30.dp)
@@ -84,7 +85,7 @@ fun UIKetiga(modifier: Modifier) {
             )
             Spacer(modifier = Modifier.width(iconspacing))
             Image(
-                painter = painterResource(R.drawable.tt),
+                painter = painterResource(R.drawable.tiktokz),
                 contentDescription = null,
                 modifier = Modifier
                     .size(30.dp)
@@ -250,6 +251,41 @@ fun UIKetiga(modifier: Modifier) {
                     )
                 }
             }
+        }
+        Spacer(modifier = Modifier.weight(1f))
+        //4. daftar
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(55.dp)
+                .background(
+                    Color.Red,
+                    shape = RoundedCornerShape(50)
+                )
+                .padding(horizontal = 40.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.Center
+        ) {
+            Box(
+                modifier = Modifier
+                    .size(30.dp)
+                    .background(Color.White.copy(alpha = 0.2f), CircleShape),
+                contentAlignment = Alignment.Center
+            ) {
+                Icon(
+                    imageVector = Icons.AutoMirrored.Filled.ArrowForward,
+                    contentDescription = null,
+                    tint = Color.White,
+                    modifier = Modifier.size(20.dp)
+                )
+            }
+            Spacer(modifier = Modifier.width(12.dp))
+            Text(
+                text = "Daftar jadi fans EMYU",
+                fontSize = 16.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.White
+            )
         }
     }
 }
